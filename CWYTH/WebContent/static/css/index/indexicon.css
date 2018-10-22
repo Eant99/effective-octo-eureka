@@ -1,0 +1,48 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1477043283'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1477043283#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1477043283') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1477043283') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1477043283#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.fa {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**********************************菜单样式开始*****************************************/
+/*资产建账*/
+.icon-zcjz:before { content: "\e649"; }
+/*资产变动*/
+.icon-zcbd:before { content: "\e64c"; }
+/*资产处置*/
+.icon-zccz:before { content: "\e64a"; }
+/*精密仪器管理*/
+.icon-jmyqgl:before { content: "\e648"; }
+/*业务审核*/
+.icon-ywsh:before { content: "\e64b"; }
+/*查询*/
+.icon-cx:before { content: "\e64d"; }
+/*统计分析*/
+.icon-tjfx:before { content: "\e64e"; }
+/*账与表*/
+.icon-zyb:before { content: "\e640"; }
+/*资产清查*/
+.icon-zcqc:before { content: "\e647"; }
+/*设备维修*/
+.icon-sbwx:before { content: "\e601"; }
+/*闲置调剂*/
+.icon-xztj:before { content: "\e60a"; }
+/*资产折旧*/
+.icon-zczj:before { content: "\e61d"; }
+/*辅助功能*/
+.icon-fzgn:before { content: "\e641"; }
+/*系统设置*/
+.icon-xtsz:before { content: "\e63d"; }
+/**********************************菜单样式结束*****************************************/

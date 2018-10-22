@@ -1,0 +1,178 @@
+package com.googosoft.service.wsbx.xmsq;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.googosoft.constant.OplogFlag;
+import com.googosoft.dao.wsbx.xmsq.XmsqDao;
+import com.googosoft.service.base.BaseService;
+import com.googosoft.util.PageData;
+
+/**
+ * 单位信息service
+ * @author master
+ */
+@Service("xmsqService")
+public class XmsqService extends BaseService{
+	
+	@Resource(name="xmsqDao")
+	public XmsqDao bmjfszDao;
+	
+	
+	/**
+	 * 新增
+	 * @param dwb
+	 * @return
+	 */
+	public int doAdd(PageData pd,String loginId,String rybh){
+		return bmjfszDao.doAdd(pd,loginId,rybh);
+	}
+	public int doAddpl(PageData pd,String loginId,String rybh){
+		return bmjfszDao.doAddpl(pd,loginId,rybh);
+	}
+	/**
+	 * 获取实体类
+	 * @param dwbh
+	 * @return
+	 */
+	public Map<?, ?> getObjectById(String dwbh) {
+		return bmjfszDao.getObjectById(dwbh);
+	}
+	public Map<?, ?> getObjectByguid(String dwbh) {
+		return bmjfszDao.getObjectByguid(dwbh);
+	}
+	/**
+	 * 修改
+	 * @param dwb
+	 * @return
+	 */
+	public int doUpdate(PageData pd,String dwbh) {
+		return bmjfszDao.doUpdate(pd,dwbh);
+	}
+	public int doChexiao(PageData pd,String dwbh) {
+		return bmjfszDao.doChexiao(pd,dwbh);
+	}
+	
+	public boolean goFhPage(PageData pd,String dwbh){
+		return bmjfszDao.goFhPage(pd,dwbh);
+	}
+	/**
+	 * 删除
+	 * @param dwb
+	 * @return
+	 */
+	public int doDelete(String dwbh,String xmbh,String bmbh) {
+		int result = bmjfszDao.doDelete(dwbh,xmbh,bmbh);
+		if(result>0){
+			doAddOplog(OplogFlag.DEL,"单位基础信息",dwbh);
+		}
+		return result;
+	}
+	
+	public List insertJcsj(String file) {
+		return bmjfszDao.insertJcsj(file);
+	}
+	
+	   public boolean doCheck(String xmbh,String bmbh) {
+			return bmjfszDao.doCheck(xmbh,bmbh);
+		}
+	   
+	   public boolean doCheck1(String pdm) {
+				return bmjfszDao.doCheck1(pdm);
+			}
+	/**
+	 * 判断部门号的重复性
+	 * @param dwb
+	 * @return
+	 *//*
+	public boolean doCheckDwbh(String bmh) {
+		boolean result = dwbDao.doCheckDwbh(bmh);
+		return result;
+	}
+	
+	*//**
+	 * 删除时，如果单位下有已处置的资产，则禁用该单位
+	 * @param dwbh
+	 * @return
+	 *//*
+	public int jydW(String dwbh){
+		int i = dwbDao.jyDw(dwbh);
+		if(i>0){
+			doAddOplog(OplogFlag.DEL,"单位基础信息：禁用",dwbh);
+		}
+		return i;
+	}
+	*//**
+	 * 删除单位时验证该单位下是否有人员或下级单位或资产
+	 * @param DWBHS
+	 * @return
+	 *//*
+	public String validateForRyOrXjdwOrZc(String DWBHS){
+		return dwbDao.validateForRyOrXjdwOrZc(DWBHS);
+	}
+
+	*//**
+	 * 单位信息批量赋值
+	 * @param ids
+	 * @param ziduan
+	 * @param zdValue
+	 * @return
+	 * @throws ParseException
+	 *//*
+	public int doPlfuzhi(String ids,String ziduan,Object zdValue) throws ParseException  {
+		if(ziduan.equals("sjdw")){
+			zdValue = WindowUtil.getXx(zdValue+"", "D");
+		}else if(ziduan.equals("dwld")){
+			zdValue = WindowUtil.getXx(zdValue+"", "R");
+		}else if(ziduan.equals("jlrq")){
+			zdValue = new SimpleDateFormat("yyyy-MM-dd").parse(zdValue+"");
+		}
+		return dwbDao.doPlfuzhi(ids, ziduan, zdValue);
+		
+	}
+	
+	*//**
+	 * 单位机构设置
+	 * 通过部门号(名称)查询单位编号
+	 * @param dwmc (bmh)mc格式
+	 * @return
+	 *//*
+	public String findDwbhByDwmc(String dwmc) {
+		String  dwbh = dwbDao.findDwbhByDwmc(dwmc);
+		if(Validate.isNull(dwbh)){
+			dwbh="F";
+		}
+		return dwbh ;
+	}
+	*//**
+	 * 通过dbwh获取（bmh）mc格式
+	 * @param dwbh
+	 * @return
+	 *//*
+	public String getDwxx(String dwbh){
+		return dwbDao.getDwxx(dwbh);
+	}
+	*//**
+	 * 通过obj获得下级节点的数量
+	 * @return
+	 *//*
+	public String getNewStatus(String dwbh) {
+		return dwbDao.getNewStatus(dwbh);
+	}*/
+	   /*
+	    * @param xmbh
+	    * @return xmfzrbh 
+	    * */
+	public String doSelect(String xmbh) {
+		return bmjfszDao.getXmfzrbh(xmbh);
+	}
+	public Map<String, Object> getSqqzsj(String xmbh) {
+		Map<String,Object> sjmap = bmjfszDao.getSqqzsj(xmbh);
+		return sjmap;
+	}
+	
+}

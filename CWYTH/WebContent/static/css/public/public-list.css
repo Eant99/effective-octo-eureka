@@ -1,0 +1,422 @@
+@CHARSET "UTF-8";
+/* ***************************************datatables 的样式       开始******************************************** */
+.dataTables_wrapper {
+	*zoom: 1; 
+}
+th,td {
+	white-space: nowrap;
+}
+.dataTables_wrapper .dataTables_length {
+    margin: 0px 10px -4px 1px;
+    padding-top:4px;
+    float: left; 
+}
+.dataTables_wrapper .dataTables_filter {
+    float: right; 
+}
+.dataTables_wrapper .dataTables_paginate {
+    margin-right: 10px;
+    height:34px; 
+}
+.dataTables_wrapper .filter_column input[type="text"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+.dataTables_wrapper .sorting:after {
+    font-family: fontawesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+     content: "\f0dc";
+    float: right; 
+}
+.dataTables_wrapper .sorting_asc:after {
+    font-family: fontawesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    content: "\f0de";
+    float: right; 
+    padding-top:5px;
+}
+.dataTables_wrapper .sorting_desc:after {
+    font-family: fontawesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+     content: "\f0dd";
+    float: right; 
+    padding-bottom:5px;
+}
+.dataTables_wrapper  td.details-control i:before {
+    content: "\e63b";
+}
+.dataTables_wrapper  tr.shown td.details-control i:before {
+    content: "\e638";
+}
+.dataTables_wrapper  tr.shown td.details-control i {
+	font-size: 13px;
+}
+.dataTables_wrapper  td.text-red {
+	color: red;
+}
+.dataTables_wrapper td #detailTable th {
+	padding: 6px;
+}
+.dataTables_wrapper  td #detailTable td:first-child, 
+.dataTables_wrapper td #detailTable th:first-child {
+	width: 41px;
+    text-align: center;
+}
+.dataTables_wrapper  td #detailTable td:first-child i {
+	color: red;
+}
+.dataTables_wrapper  tr.selected td[colspan] {
+	background-color: white;
+}
+/* ***************************************datatables 的样式       结束******************************************** */
+.pagination {
+	margin: 7px 0 0;
+    float: right;
+}
+.table {
+	margin-bottom: 0;
+}
+.dataTables_wrapper .table th {
+	text-align: center;
+	background-color: #f3f3f3;
+	/* white-space: nowrap; */
+}
+.dataTables_wrapper input[name$=_length] {
+	width: 32px !important;
+	height:21px !important;
+	margin-left: 5px;
+    margin-right: 5px;
+    display: inline;
+}
+.btn.btn_upd,.btn.btn_delxx {
+	padding: 6px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	vertical-align: middle;
+}
+.table>thead>tr>th
+{
+	padding: 5px 4px;
+}
+.table>tbody>tr>td {
+	/*padding: 4px 8px;
+	 word-break: break-all; */
+	 padding: 2px 4px;
+}
+.btn-group + .btn-group {
+	margin-right: 10px;
+}
+/*资产处置页面使用此样式*/
+.table>tbody>tr.synx_error,.table>tbody>tr.synx_error:hover{
+	background-color:rgba(244, 67, 54, 0.52) !important;
+}
+.table>tbody>tr.selected {
+	background-color: #e7e7e7 !important; 
+}
+.search {
+    padding: 3px 15px;
+    position: relative;
+    border: none;
+    border-bottom: solid 1px #eee;
+}
+.search-more .date {
+	width:85px !important;
+}
+.search-more .number {
+	width:110px !important;
+}
+.search-more select{
+	width:150px !important;
+}
+.btn-primary i.fa {
+	color: white;
+}
+.form-inline .form-group {
+	margin-bottom: 0px;
+	padding-right: 10px;
+}
+.search-more > .form-group {
+	margin-bottom: 5px;
+}
+.search-simple > .form-group > label{
+	margin-bottom: 0px;
+	vertical-align: sub;
+}
+.search-more-bottom .btn,
+.search-more-bottom .btn i.fa
+ {
+	font-size: 12px;
+}
+.list {
+	padding: 10px 15px;
+	border: solid 1px #B2C5D9;
+}
+.box:first-child .box-content {
+	margin-bottom: 0px;
+}
+.hide {
+	display: none;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    background-color: #00acec;
+    border-color: #00acec;
+}
+.pagination>li>a, .pagination>li>span {
+    padding: 4px 9px;
+}
+/* **********************************选择变动或处置资产的样式*************************************** */
+.batch-container .batch-btn-wr {
+	position: fixed;
+	_position: absolute;
+	bottom: 120px;
+	right: 5px;
+	width: 56px;
+	height: 56px;
+	z-index: 9999;
+}
+a.batch-file-item-delete {
+    cursor: pointer;
+    text-decoration: none;
+}
+.batch-container .batch-btn-wr .batch-btn {
+	height: 100%;
+	width: 100%;
+	line-height: 56px;
+	background: #00acec;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-ms-border-radius: 30px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	text-align: center;
+	cursor: pointer
+}
+
+.batch-container .batch-btn-wr .batch-btn span {
+	position: absolute;
+	padding: 1px 5px;
+	font-size: 11px;
+	line-height: 14px;
+	left: 48%;
+	bottom: 45%;
+	background: #f64137;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	white-space: nowrap
+}
+
+.batch-container .batch-btn-wr .batch-btn.active {
+	animation: batch-btn-active .5s ease-in;
+	-webkit-animation: batch-btn-active .5s ease-in;
+	-mos-animation: batch-btn-active .5s ease-in;
+	-ms-animation: batch-btn-active .5s ease-in
+}
+
+.batch-container .batch-file-container {
+	position: fixed;
+	_position: absolute;
+	width: 670px;
+	height: 435px;
+	bottom: 500px;
+	right: 80px;
+	background: #fff;
+	z-index: 100;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	transition: transform .25s ease-in, opacity .25s ease-in;
+	-webkit-transition: transform .25s ease-in, opacity .25s ease-in;
+	-mos-transition: transform .25s ease-in, opacity .25s ease-in;
+	-ms-transition: transform .25s ease-in, opacity .25s ease-in;
+	transform: translateY(450px);
+	-webkit-transform: translateY(450px);
+	-ms-transform: translateY(450px);
+	-mos-transform: translateY(450px);
+	display: none;
+	border-radius: 5px;
+}
+
+.batch-container .batch-file-container .batch-file-header {
+	height: 32px;
+	line-height: 32px;
+	background: #00acec;
+	padding: 0 15px 0 20px;
+	color: #fff;
+	font-size: 14px;
+	cursor: move;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.batch-container .batch-file-container .batch-file-header .batch-file-close {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	float: right;
+	text-align: right;
+	font-size: 18px;
+}
+
+.batch-container .batch-file-container .batch-file-controller {
+	height: 45px;
+	line-height: 42px;
+	background: #efefef;
+	padding: 0 15px 0 20px;
+	border-bottom: 1px solid #e5e5e5;
+	clear: both;
+}
+
+
+.batch-container .batch-file-container .batch-file-list-container {
+	height: 355px;
+	padding: 0 15px 10px 20px;
+	position: relative;
+	overflow: auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.batch-container .batch-file-container .batch-file-list-container .batch-file-list-item-line {
+	padding: 10px 10px 8px 10px;
+	min-height: 40px;
+	_height: 40px;
+	position: relative;
+	border-bottom: 1px solid #efefef
+}
+
+.batch-container .batch-file-container .batch-file-list-container .batch-file-list-item-line.last {
+	border-bottom: 0
+}
+
+.batch-container .batch-file-container .batch-file-list-container .batch-file-list .batch-file-list-item-del {
+	azimuthwidth: 38px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.zhxxcx{
+	float:right;
+	width: 205px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding-left:5px;
+}
+.dataTables_filter .zhxxcx
+{
+	margin-top:8px;
+}
+.zhxxcx>input{
+    height: 25px !important;
+    border: none;
+    padding:2px;
+}
+.zhxxcx>input:focus{
+    box-shadow:none;
+}
+.zhxxcx>span{
+   background-color: rgba(0,0,0,0);
+   border:none;
+}
+
+.icon-chaxun
+{
+	font-size:15px;
+}
+
+.txtLeft
+{
+	text-align:left;
+}
+.txtRight
+{
+	text-align:left;
+}
+.txtCenter
+{
+	text-align:center;
+}
+
+.wxtsRemove
+{
+	color: red;
+}
+.wxtsRemove:HOVER
+{
+	cursor: pointer;
+}
+.total{
+    padding-left: 2px;
+    padding-top: 2px;
+    margin-top: 0px !important;
+}
+.fyrow{
+	padding-left: 0px;
+}
+.wxts{
+	margin-left: 10px;
+}
+.wxts_sh{
+	padding-bottom: 1px !important;
+	padding-top: 2px !important; 
+	margin-top: 4px !important;
+}
+.DTFC_RightBodyLiner{
+	overflow-y: hidden !important;
+}
+.tabs{
+	padding-left: 1px;
+	padding-right: 1px;
+}
+#searchBox_xxll,#searchBox_csh{
+	padding-left: 0px;
+}
+ul.lxz {
+	height: 300px;
+	overflow: auto;
+} 
+ul.lxz input[name="icheck"] {
+	margin-left: 10px;
+}
+.form-control[readonly]{
+background-color: white !important;
+}
+#mydatatables  input{
+	height: 25px;
+	line-height: 25px;
+}

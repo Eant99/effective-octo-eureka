@@ -1,0 +1,163 @@
+@CHARSET "UTF-8";
+#bbzx :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/bbzx1.png");
+}
+#pzgl :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/pzgl1.png");
+}
+#kmsz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/kmsz1.png");
+}
+#pzsz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/pzsz1.png");
+}
+#sqsp :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/sqsp1.png");
+}
+#wsbx :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wsbx1.png");
+}
+#bxsz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/bxsz1.png");
+}
+#szjz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/szjz1.png");
+}
+#ptsz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/ptsz1.png");
+}
+#jssz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/jssz1.png");
+}
+#qmjz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/qmjz1.png");
+}
+#oaxt :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/oaxt1.png");
+}
+#rsgl :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/rsgl1.png");
+}
+#xsgz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/xsgz1.png");
+}
+#szda :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/szda1.png");
+}
+#yxgz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/yxgz1.png");
+}
+#sfxt :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/sfxt1.png");
+}
+#gygl :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/gygl1.png");
+}
+#kyxm :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/kyxm1.png");
+}
+#jcgl :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/jcgl1.png");
+}
+#zlmb :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/zlmb1.png");
+}
+
+
+
+
+
+
+#wdbx :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wdbx1.png");
+background-position-x: center;
+}
+#wdsqsp :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wdsqsp1.png");
+background-position-x: center;
+}
+#wdxm :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wdxm1.png");
+background-position-x: center;
+}
+#wdxz :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wdxz1.png");
+background-position-x: center;
+}
+#wdzc :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wdzc1.png");
+background-position-x: center;
+}
+#wdjf :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wdjf1.png");
+background-position-x: center;
+}
+#xqfx :hover{
+background-repeat:no-repeat;
+background-image: url("/CWYTH/static/images/deskImage/wdjf1.png");
+background-position-x: center;
+}
+
+.skip{
+	position: absolute;width: 30px;height: 30px;line-height: 30px;border-radius: 15px;text-align: center;font-size: 18px;
+	top: 50%;opacity: 0;cursor: pointer;z-index: 999;
+}
+.skip:hover{
+	opacity: 0.5!important;background-color: #0e9aef;
+}
+#block-bsdt:hover .skip{
+	opacity: 0.8;
+}
+.bsdt-page{
+	height:260px;margin: auto;width: 90%;transition: 2s;padding:0px;position: relative;
+	overflow:hidden;
+}
+/* font-size 消除页面间距，勿删 */
+.bsdt-content{
+	position: absolute;white-space: nowrap;left:0px;height:100%;font-size:0px;
+}
+.bsdt-show{
+	display: inline-block;padding:0px;height:100%;font-size:12px;
+}
+.bsdt-show ul li{
+	list-style: none;float:left;padding: 5px 20px;
+}
+.bsdt-show ul li .item{
+	height: 70px;width:50px;background-repeat:no-repeat;padding: 0px;float:none;margin:auto;
+}
+.bsdt-show ul li .item div{
+	padding-top: 55px; text-align: center;width: 50px;margin: auto;
+}
+
+
+
+
+
+

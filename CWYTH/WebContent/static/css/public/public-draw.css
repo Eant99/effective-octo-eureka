@@ -1,0 +1,103 @@
+.box .box-content {
+	border: none !important;
+	box-shadow: none !important;
+}
+.box.box-collapsed .box-content {
+    display: block !important;
+}
+.box.box-collapsed .box-panel.box-collapsed .box-content {
+	display: none !important;
+}
+.box .box-header .actions .box-collapse i:before {
+	content: "\e634";
+}
+.box.box-collapsed .box-header .actions .box-collapse i:before {
+	content: "\e633";
+}
+.box.search .box-panel {
+	margin-bottom:15px;
+}
+.box{
+	margin:0 0 15px !important;
+}
+#searchBox .btn_search_more {
+	background-color: white;
+	border:1px solid #ddd;
+	border-radius: 4px;
+	padding-top: 0;
+    padding-bottom: 3px;
+	position: absolute;
+    left: 48%;
+    bottom: 10px;
+    border-top: none;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+#searchBox .btn_search_more:hover,#searchBox .btn_search_more:active,#searchBox .btn_search_more:focus {
+	background-color: white;
+	color: #337ab7;
+	outline: none;
+}
+.hide {
+	display: none;
+}
+
+
+.btn-mark {
+	background-color: #F9F9F9 !important;
+	padding: 2px 8px;
+	margin-bottom:4px;
+    border-radius: 2px;
+    border: 1px solid #eee; 
+    position: relative;
+}
+.btn-mark:hover,
+.btn-mark:active,
+.btn-mark:focus {
+	text-decoration: none;
+	border-radius: 2px;
+    border: 1px solid #eee;
+}
+.btn-mark.active {
+	border-color: #F7B432;
+	background-color: #FFF0CC !important;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(247,180,50,0.6);
+	color: #C29C08;
+}
+.btn-mark.active .badge {
+}
+.btn .badge {
+	padding: 1px 5px;
+}
+.btn-mark.active .label.label-success {
+	display: inline-block;
+}
+.label.label-success {
+    padding: 0px 3px;
+    font-size: 1px;
+    top: -1px;
+    right: -1px;
+    display:none;
+    position: absolute;
+    z-index: 99999;
+}
+.zt_label {
+	padding: 3px 0;
+	display: inline-block;
+}
+[class^='col-'] {
+	padding-right: 7px !important;
+	padding-left: 8px !important;
+}
+[class^='col-']:first-child {
+	padding-right: 7px !important;
+	padding-left: 15px !important;
+}
+[class^='col-']:last-child {
+	padding-right: 15px !important;
+	padding-left: 8px !important;
+}
+[class^='col-']:only-child {
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+}

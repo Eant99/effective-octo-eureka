@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+.switch{
+	display:none !important;
+}
+.ico_docu{
+    background-position: 18px -42px !important;
+}
+.ico_open{
+	background:url(../diy/open.png) 0 0 no-repeat !important;
+}
+.ico_close{
+	background:url(../diy/close.png) 0 0 no-repeat !important;
+}
+.domleft{
+	width:13%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	border-right:4px solid #FAFAFA;
+	border-left: 4px solid #FAFAFA;
+	overflow:hidden;
+	background-color: #FAFAFA;
+}
+.domright{
+	position:absolute;
+	left: 13%;
+    bottom: 0px;
+    width: 86%;
+    height: 100%;
+    background-color: #F3F3F3;
+}
+.domright iframe{
+	margin-left:10px;
+}
+.treeTop{
+    font-family: "微软黑体";
+    font-weight:bold;
+    overflow:hidden;
+}
+.TreeTitle{
+	height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+   	color: #0D86DC;
+   	text-align:center;
+}
+.searchArea{
+	text-align:center;
+	position: relative;
+	height:30px;
+}
+.searchInput{
+	width:100%;
+	font-weight: normal;
+	height: 22px;
+	font-size: 13px;
+	border: 1px solid #0D86DC;
+}
+.logo{
+	font-size:24px !important;
+	display:none;
+}
+.sousou{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    color: #333369;
+}
+.treediv{
+	overflow:auto;
+	width:100%;
+	height:100%;
+}
+.closemenu{
+	float:right;
+	margin-right:5px;
+	font-size: 25px;
+	margin-top: 2px;
+	cursor:pointer;
+	font-size: 12px !important;
+}
+a:hover{
+	color:#018efb !important;
+	text-decoration: blink !important;
+}
+.open{
+	display:none;
+	position: fixed;
+	left:0px;
+	cursor:pointer;
+	color:#0D86DC;
+	font-size: 12px !important; 
+}

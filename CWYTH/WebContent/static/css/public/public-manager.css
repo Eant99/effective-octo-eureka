@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+
+/***************************************************** 验证框架样式开始 *******************************************/
+.bv-form .help-block {
+    margin-bottom: 3px;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    left: 43px;
+}
+.nav-tabs li.bv-tab-success > a,.has-success .help-block {
+    color: #3c763d;
+}
+.nav-tabs li.bv-tab-error > a,.has-error .help-block {
+    color: #a94442;
+}
+.form-control-feedback{
+	right: 0px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+}
+.help-block{
+/* 	padding-left:17%; */
+	color:red;
+}
+/***************************************************** 验证框架样式 结束 *******************************************/
+
+/********* 必填项标志(*)的样式 ***********/
+.input-group span.required {
+	color: red;
+	padding: 3px;
+	font-size: 14px;
+}
+/********* 保存按钮的样式 ***********/
+#btn_save {
+	background-color: #00acec;
+	color: white;
+}
+/********* 保存按钮里的图标的样式 ***********/
+#btn_save i {
+	color: white;
+}
+.box .box-content {
+	border: none !important;
+	box-shadow: none !important;
+}
+.box.box-collapsed .box-content {
+    display: block !important;
+}
+.box.box-collapsed .box-panel.box-collapsed .box-content {
+	display: none !important;
+}
+.box .box-panel .box-header .actions .box-collapse i
+{
+	color:#595858;
+}
+.box .box-panel .box-header .actions .box-collapse i:before {
+	/*content: "\e634";*/
+/* 	content: "\e635"; */
+    font-family: fontawesome;
+	content: "\f078";
+}
+.box.box-collapsed .box-panel.box-collapsed .box-header .actions .box-collapse i:before {
+	/*content: "\e633";*/
+/* 	content: "\e69a"; */
+	font-family: fontawesome;
+	content: "\f077";
+}
+.box-panel + .box-panel {
+	margin-top: -1px;
+}

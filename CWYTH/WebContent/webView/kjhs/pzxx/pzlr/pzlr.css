@@ -1,0 +1,141 @@
+	#popup{
+		text-align: left;
+	}
+	.pull-right{
+ 		margin-top: 4px!important;
+		margin-right: 10px!important;
+	}
+	.input-radius2{
+	    border-top-right-radius: 4px!important;
+	    border-bottom-right-radius: 4px!important;
+	}
+	select{
+		border-radius: 4px;
+	}
+	.bg-white{
+		background-color: white!important;
+	}
+	.minus{
+		background-color: #ff000014!important;
+	}
+	.non-edit{
+		background-color: rgba(204, 204, 204, 0.47058823529411764)!important;
+		background-color: #cccccc78!important;
+	}
+	.t-round{
+		width: 90%!important;
+		height: 30px;
+		line-height: 30px;
+		display:inline-block;
+		margin: 0px;
+	}
+	.top_table{
+		width:90% !important;
+		height: 40px;
+		margin:auto;
+		margin-top:10px;
+		border-collapse:collapse!important;
+	}
+	.top_table tbody tr:nth-of-type(3) ~ tr:hover .btn_delete{
+		display: inline-block!important;
+	}
+	.top_table td {
+		text-align: center;
+   	 	border: 1px solid #b3b0b0;
+   	 	height: 40px;
+	}
+	.top_table td.action {
+		width: 4%!important;
+		border: none;
+	}
+	.top_table td.xh{
+		width: 6%!important;
+	}
+	.top_table td.xh + td{
+		width: 30%;
+	}
+	.top_table td.xh + td + td{
+		width: 15%;
+	}
+	.top_table td .zyTextArea{
+		height: 100%;
+		width: 100%;
+ 		padding: 0px 5px;
+ 		margin: 0px;
+ 		float: left;
+ 		overflow: hidden;
+ 		resize: none;
+ 		border: none;
+		outline: none;
+	}
+	.focused {
+		border-width: 2px!important;
+		border-style: inset!important;
+		border-color: #b5d5ff!important;
+	}
+	input.input_title{
+		border:none;
+		height:100% !important;
+		width:100% !important;
+	}
+	.pzfz_info{
+		width: 88%;
+		margin:auto;
+	}
+	.btn_delete{
+		text-align:center;
+	    width: 26px;
+	    height: 26px;
+	    background-color: #F3F9FF;
+	    border-radius: 4px;
+	    border: 1px solid #cccccb;
+	    display: inline-block;
+	    position: relative;
+	}
+	.btn_delete:after{
+/* 		2014 */
+	    content: "\2014";
+	    color:#9c9c9c!important;
+	    color:#337ab7!important;
+	    font-size: 1em;
+	    position: relative;
+	    cursor: pointer;
+	    top:3px;
+	}
+	.btn_up{
+		text-align:center;
+	    width: 35px;
+	    height: 26px;
+	    background-color: #F3F9FF;
+	    border-radius: 4px;
+	    border: 1px solid #cccccb;
+	    display: inline-block;
+	    position: relative;
+	    cursor:pointer;
+	}
+	#txt_pzrq{
+		height:28px !important;
+		background-color: white;
+		line-height: normal;
+	}
+	#txt_fjzs{
+		height:28px !important;
+		line-height: normal;
+	}
+	#txt_pzz{
+		height:28px !important;
+		
+	}
+	#txt_pzbh{
+		height:28px !important;
+	}
+	#fzForm{
+		margin-left: 50px;
+		background-color: white;
+	}
+	#txt_jfzje,#txt_dfzje{
+		padding: 0px 5px;
+	}
+	.text-red{
+		color: red;
+	}

@@ -1,0 +1,13 @@
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+/*     	border-bottom-width: 0px; */
+   	border-bottom:1px solid #ddd;
+}
+ table{
+	border-collapse:collapse!important;
+}
+.search-simple .select2-container--default .select2-selection--single {
+   	border-radius: 4px 4px 4px 4px!important;
+}
+.search-simple select,input[type=text],.date{
+	height:25px!important;
+}

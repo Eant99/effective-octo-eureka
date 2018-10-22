@@ -1,0 +1,338 @@
+table.dataTable {
+  clear: both;
+  margin-top: 3px !important;
+  margin-bottom: 6px !important;
+  max-width: none !important;
+  /* border-collapse: collapse !important; */
+  width: 100% !important;
+}
+.btn-group-marginTop{
+	margin-top: 3px !important;
+}
+table.dataTable td
+{
+	height:26px;
+}
+table.dataTable td,
+table.dataTable th {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+table.dataTable td.dataTables_empty,
+table.dataTable th.dataTables_empty {
+  text-align: left;
+}
+table.dataTable.nowrap th,
+table.dataTable.nowrap td {
+  white-space: nowrap;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_length select {
+  width: 75px;
+  display: inline-block;
+}
+div.dataTables_wrapper div.dataTables_filter {
+  text-align: right;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: auto;
+}
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: 8px;
+  white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+  padding-top:2px;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin: 2px 0;
+  white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_processing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -26px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+table.dataTable thead > tr > th:active,
+table.dataTable thead > tr > td:active {
+  outline: none;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  cursor: pointer;
+  position: relative;
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+  display: block;
+  font-family: 'fontawesome';
+  opacity: 0.5;
+}
+table.dataTable thead .sorting:after {
+  opacity: 0.2;
+  content: "\f0dc";
+  /* sort */
+}
+table.dataTable thead .sorting_asc:after {
+  content: "\f0de";
+  /* sort-by-attributes */
+}
+table.dataTable thead .sorting_desc:after {
+  content: "\f0dd";
+  /* sort-by-attributes-alt */
+}
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+  color: #eee;
+}
+
+div.dataTables_scrollHead table.dataTable {
+  margin-bottom: 0 !important;
+}
+
+div.dataTables_scrollBody table {
+  border-top: none;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+div.dataTables_scrollBody table thead .sorting:after,
+div.dataTables_scrollBody table thead .sorting_asc:after,
+div.dataTables_scrollBody table thead .sorting_desc:after {
+  display: none;
+}
+div.dataTables_scrollBody table tbody tr:first-child th,
+div.dataTables_scrollBody table tbody tr:first-child td {
+  border-top: none;
+}
+
+div.dataTables_scrollFoot table {
+  margin-top: 0 !important;
+  border-top: none;
+}
+
+@media screen and (max-width: 767px) {
+  div.dataTables_wrapper div.dataTables_length,
+  div.dataTables_wrapper div.dataTables_filter,
+  div.dataTables_wrapper div.dataTables_info,
+  div.dataTables_wrapper div.dataTables_paginate {
+    text-align: center;
+  }
+}
+div.dataTables_info
+{
+	text-align: left !important;
+}
+table.dataTable.table-condensed > thead > tr > th {
+  padding-right: 20px;
+}
+table.dataTable.table-condensed .sorting:after,
+table.dataTable.table-condensed .sorting_asc:after,
+table.dataTable.table-condensed .sorting_desc:after {
+  top: 6px;
+  right: 6px;
+}
+
+table.table-bordered.dataTable th,
+table.table-bordered.dataTable td {
+  border-left-width: 0;
+}
+table.table-bordered.dataTable th:last-child, 
+table.table-bordered.dataTable th:last-child,
+table.table-bordered.dataTable td:last-child,
+table.table-bordered.dataTable td:last-child {
+  /*
+  多行表头的，加这个样式，会导致，最后一个合并行，前一个少右边线
+  border-right-width: 0;
+  */
+}
+table.table-bordered.dataTable tbody th,
+table.table-bordered.dataTable tbody td {
+  border-bottom-width: 0;
+}
+
+div.dataTables_scrollHead table.table-bordered {
+  border-bottom-width: 0;
+}
+
+div.table-responsive > div.dataTables_wrapper > div.row {
+  margin: 0;
+}
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:first-child {
+  padding-left: 0;
+}
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
+  padding-right: 0;
+}
+
+table.DTFC_Cloned tr {
+  background-color: white;
+  margin-bottom: 0;
+}
+
+div.DTFC_LeftHeadWrapper table,
+div.DTFC_RightHeadWrapper table {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  background-color: white;
+}
+
+div.DTFC_LeftBodyWrapper table,
+div.DTFC_RightBodyWrapper table {
+  border-top: none;
+  margin: 0 !important;
+}
+div.DTFC_LeftBodyWrapper table thead .sorting:after,
+div.DTFC_LeftBodyWrapper table thead .sorting_asc:after,
+div.DTFC_LeftBodyWrapper table thead .sorting_desc:after,
+div.DTFC_LeftBodyWrapper table thead .sorting:after,
+div.DTFC_LeftBodyWrapper table thead .sorting_asc:after,
+div.DTFC_LeftBodyWrapper table thead .sorting_desc:after,
+div.DTFC_RightBodyWrapper table thead .sorting:after,
+div.DTFC_RightBodyWrapper table thead .sorting_asc:after,
+div.DTFC_RightBodyWrapper table thead .sorting_desc:after,
+div.DTFC_RightBodyWrapper table thead .sorting:after,
+div.DTFC_RightBodyWrapper table thead .sorting_asc:after,
+div.DTFC_RightBodyWrapper table thead .sorting_desc:after {
+  display: none;
+}
+div.DTFC_LeftBodyWrapper table tbody tr:first-child th,
+div.DTFC_LeftBodyWrapper table tbody tr:first-child td,
+div.DTFC_RightBodyWrapper table tbody tr:first-child th,
+div.DTFC_RightBodyWrapper table tbody tr:first-child td {
+  border-top: none;
+}
+
+div.DTFC_LeftFootWrapper table,
+div.DTFC_RightFootWrapper table {
+  border-top: none;
+  margin-top: 0 !important;
+  background-color: white;
+}
+
+/****************************自定义样式****************************/
+
+/****************************************** datatable跳转分页的样式    开始 ******************************************************/
+.page_jump {
+	width: 100px;
+	float: right;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.page_jump .btn {
+	padding:6px;
+	font-size: 12px;
+}
+.page_jump input[type=number] {
+	height: 26px !important;
+}
+/****************************************** datatable跳转分页的样式    结束 ******************************************************/
+
+table .td-checkbox  /* 控制datatable第一列的CheckBox居中 */
+{
+	text-align:center;
+}
+
+/****************************************** datatable每行末尾功能按钮样式        开始************************************************/
+div.dataTables_scrollBody table.datatable-fix {
+	border-top: none;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+div.dataTables_scrollHead table.datatable-fix th:first-child,
+div.dataTables_scrollBody table.datatable-fix tbody td:first-child {
+	border-left: none;
+}
+div.dataTables_scrollHead table.datatable-fix th:last-child,
+div.dataTables_scrollBody table.datatable-fix tbody td:last-child {
+	border-right: none;
+}
+table.datatable-fix tbody td:last-child {
+	padding: 0;
+	position: relative;
+}
+.table.datatable-fix {
+/* 	border-left: none; */
+	border-right: none;
+}
+.datatable-fix>tbody>tr>td.dataTables_empty {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.datatable-fix .hoverbtn {
+	background-color: #00acec;
+	width: 15px;
+	height: 29px;
+	line-height: 29px;
+	position: absolute;
+	top:0;
+	right:0;
+	z-index: 5;
+}
+.datatable-fix .hoverbtn a,
+.datatable-fix .hoverflag {
+	color: white;
+}
+.datatable-fix .hoverflag {
+	font-size: 20px;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+.datatable-fix .hoverbtnlist {
+	display: none;
+	position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: #00acec;
+    z-index: 9;
+}
+.datatable-fix .hoverbtn:hover .hoverbtnlist {
+	display: block;
+}
+.datatable-fix .DTFC_RightHeadBlocker.DTFC_Blocker {
+    border-right: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    background-color: #f3f3f3;
+}
+.datatable-fix .table-bordered>thead>tr>td, 
+.datatable-fix .table-bordered>thead>tr>th {
+	border-bottom-width: 1px;
+}
+/****************************************** datatable每行末尾功能按钮样式        结束************************************************/

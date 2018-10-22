@@ -1,0 +1,520 @@
+@CHARSET "UTF-8";
+
+/**************************************BOOTSTRAP重新定义    开始****************************************/
+body {
+	font-size: 12px;
+	background-color: #f3f3f3;
+	/*font-family: 微软雅黑,华文行楷,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-family:PingFangSC-Light,'helvetica neue','hiragino sans gb',tahoma,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+}
+body:after {
+	content: " ";
+	dispay: table;
+	clear: both;
+}
+/* .form-control
+{
+	 -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+     border-radius: 2px;
+}
+.btn {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      font-size:12px;
+} */
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+	border-top:3px solid #4aa6fc;
+}
+.nav
+{
+	background-color: #F3F3F3;
+	cursor: pointer;
+}
+.row .tabs
+{
+	bottom: -1px;
+    z-index: 55;
+}
+.form-control
+{
+	height:28px;
+}
+/************************************BOOTSTRAP重新定义    结束******************************************/
+/* 详细信息页面页头样式 */
+.fullscreen {
+	/*background-color: white;
+	height: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right:8px;*/
+	background-color: white;
+	margin: 0;
+	padding-top: 0;
+	width: 100%;
+	height: 100%;
+}
+.page-header {
+  border-bottom-color: #dddddd;
+  top: -40px;
+  color: #222;
+  background: white;
+  padding: 2px 3px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  *zoom: 1; 
+}
+.page-header div.text {
+	line-height:34px
+}
+.page-header .page-title {
+	font-size: 15px;
+	line-height: 33px;
+}
+.page-header .page-title i {
+	font-size: 22px;
+}
+.page-header:before, .page-header:after {
+  display: table;
+  content: "";
+  line-height: 0; 
+}
+.page-header:after {
+  clear: both; 
+}
+.page-header .pull-left, .page-header .pull-right {
+  margin-top: 0;
+  margin-left: 12px; 
+}
+.page-bottom {
+	position: fixed;
+	bottom: 0;
+	background-color: #eaeaea;
+    width: 100%;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    z-index: 99999;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* 右下角三个辅助功能（返回，刷新，回到顶部）样式 */
+
+.tool-fix {
+    position:fixed;
+    bottom:200px;
+    right:10px;
+    z-index:999999;
+}
+.tool-fix .go-back,.tool-fix .refresh,.tool-fix .go-top {
+    height:30px;
+    width:30px;
+    border-radius:3px;
+    border:1px solid #bbb;
+    background-color:#fff;
+    margin-top:5px;
+}
+.tool-fix > * a {
+    display:block;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.tool-fix > * a:hover,.tool-fix > * a:focus,.tool-fix > * a:active {
+    text-decoration:none;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* box样式 */
+.page-header + .box {
+	top: 35px;
+}
+.box {
+	padding:0px;
+	background-color: white !important;
+	margin-left:6px;
+	margin-right:6px;
+	position: relative; 
+	border-radius: 2px;
+	margin-top: 10px;
+	margin-bottom:33px;
+}
+.box .box-header div.text{
+	padding-top:5px;
+}
+.box .box-header .actions {
+	margin-top: auto;
+	float: right; 
+}
+.box .box-header .actions .dropdown-toggle {
+	position: relative;
+	top: 5px; 
+}
+.box .box-header .actions .btn-link {
+	color: #c4c4c4;
+	text-decoration: none;
+	text-shadow: none; 
+}
+.box .box-header .actions .btn-link:hover {
+	color: #f34541; 
+}
+.box .box-header .actions .box-collapse i {
+	font-family: iconfont;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	vertical-align: baseline;
+	margin-top: 0; 
+}
+.box .box-content,
+.box .box-panel {
+	padding: 5px 6px;
+	/*border: 1px solid #dddddd;*/
+	background: white;
+	display: block;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	overflow:visible;
+}
+.sub-title {
+    font-size: 14px;
+    height:27px;
+    line-height:27px;
+    /*margin-top: 5px;*/
+}
+.sub-title + .input-group{
+	padding-top:5px;
+	padding-left:20px;
+}
+.box .box-content .sub-title {
+	font-size: 14px;
+}
+.box .box-header .title {
+	font-size: 16px;
+}
+.box .box-header .title {
+    float: left;
+    color: #3c3c3c;
+}
+.box-panel + .box-panel {
+	margin-top: 15px;
+}
+.box.box-collapsed .box-content {
+    display: none;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+/* 表单样式 */
+select,input[type=text],input[type=number],input[type=password] {
+    height:25px !important;
+    font-size:12px !important;
+    padding:0px 4px !important;
+}
+.input-radius {
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+.form-horizontal .control-label {
+	padding-top: 0;
+    line-height: 25px;
+    padding-right: 0;
+	white-space: nowrap;
+	float: left;
+}
+.input-group-btn .btn-link {
+	padding: 1px 8px;
+}
+.input-group-btn .btn-link:hover,.input-group-btn .btn-link:active,.input-group-btn .btn-link:focus{
+	outline: none;
+}
+.row .input-group {
+	margin-bottom: 8px;
+	position: relative;
+}
+.row:last-child .input-group {
+	margin-bottom: 0;
+}
+.double-input {
+	overflow: hidden;
+}
+.double-input .connector {
+	float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    line-height: 20px;
+}
+.double-input .input-group,.double-input .input[type=text] {
+	float: left;
+    width: 30%;
+}
+.double-input .input-group:not(:first-child) input.form-control:not(.date),
+.double-input .input-group:not(:first-child) select {
+	border-radius: 4px;
+}
+.double-input .input-group:first-child,.double-input .input[type=text]:first-child {
+	width: 40%;
+}
+.input-group-addon:first-child {
+	min-width: 85px;
+}
+.input-group-addon {
+	font-size: 12px;
+}
+/* ------------------------------------------------------------------------------------------------------------ */
+/* 其他样式 */
+
+label{
+	font-weight: normal;
+}
+.input-group-addon{
+	padding: 0 6px;
+}
+.btn i {
+	font-size: 12px;
+}
+.btn {
+    line-height: 1;
+    padding: 6px 7px;
+}
+.btn-primary {
+	background-color: #00acec;
+	border-color: #00acec;
+}
+.search {
+	padding: 5px 15px;
+	position: relative;
+	border: none;
+	border-bottom: solid 1px #eee;
+}
+#btn_search_more {
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+    position: relative;
+    vertical-align: middle;
+    background-color: white;
+    display: inline-block;
+}
+#btn_search_more.btn-search-more {
+	border-color: #36b5f8;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+}
+#btn_search_more>span {
+	display: block;
+    padding: 3px 5px;
+    position: relative;
+    z-index: 9;
+    background-color: white;
+    border-radius: 5px;
+}
+#btn_search_more.btn-search-more>span {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.search-more {
+	font-size: 12px;
+	display: inline;
+	position: absolute;
+	border: solid 1px #36b5f8;
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	background-color: white;
+	padding: 15px 15px 0;
+	top: 27px;
+    width: 335px;
+    left: -1px;
+    display: none;
+    z-index: 3;
+}
+.search-more .form-group {
+	margin-bottom: 8px;
+}
+.search-more .form-inline .form-group {
+	margin-bottom: 5px;
+	padding-right: 10px;
+}
+.search-more-bottom {
+	background-color: #eaeaea;
+	margin: 10px -15px 0;
+	padding: 5px;
+	border-radius: 0 0 5px 5px;
+}
+.btn.btn-link,.btn-mark {
+	font-size: 12px;
+}
+hr.hr-normal {
+	margin: 5px 5px;
+}
+i[class~=fa] {
+	color: #36b5f8;
+}
+.btn:hover,.btn:active,.btn:focus {
+	outline: none;
+}
+.center-content {
+	text-align: center;
+}
+.dropdown-menu-right {
+    left: auto;
+}
+.btn.btn-without-icon {
+	padding: 8px 8px;
+}
+.dialog-body {
+	padding-bottom:45px;
+	margin-top: 15px;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+/* *****************************swich 开关样式   开始************************************ */
+.onoffswitch {
+    -moz-user-select: none;
+    position: relative;
+    width: 100px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.onoffswitch-inner::after, .onoffswitch-inner::before {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    font-family: Trebuchet,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    height: 16px;
+    line-height: 16px;
+    padding: 0;
+    width: 50%;
+}
+.onoffswitch-inner::after, .onoffswitch-inner::before {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    font-family: Trebuchet,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    height: 21px;
+    line-height: 21px;
+    padding: 0;
+    width: 50%;
+}
+.onoffswitch-inner::after {
+    background-color: #F3F3F3;
+    color: #919191;
+    content: "否";
+    padding-right: 20px;
+    text-align: right;
+}
+.onoffswitch-inner {
+    display: block;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    width: 200%;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0;
+}
+.onoffswitch-switch {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    bottom: 0;
+    display: block;
+    margin: 0;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    transition: all 0.3s ease-in 0s;
+    width: 50px;
+}
+.onoffswitch-inner::before {
+    background-color: #00acec;
+    color: #fff;
+    content: "是";
+    padding-left: 20px;
+}
+/* *****************************swich 开关样式  结束************************************ */
+
+/*
+*页面checkbox通用样式开始
+*/
+.btn-mark {
+	background-color: #F9F9F9 !important;
+	padding: 2px 8px;
+    border-radius: 2px;
+    border: 1px solid #eee; 
+    position: relative;
+}
+.btn-mark:hover,
+.btn-mark:active,
+.btn-mark:focus {
+	text-decoration: none;
+	border-radius: 2px;
+    border: 1px solid #eee;
+}
+.btn-mark.active {
+	border-color: #F7B432;
+	background-color: #FFF0CC !important;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(247,180,50,0.6);
+	color: #C29C08;
+}
+.btn-mark.active .badge {
+}
+.btn .badge {
+	padding: 1px 5px;
+}
+.btn-mark.active .label.label-success {
+	display: inline-block;
+}
+.label.label-success {
+    padding: 0px 3px;
+    font-size: 1px;
+    top: -1px;
+    right: -1px;
+    display:none;
+    position: absolute;
+    z-index: 9;
+}
+.zt_label {
+	padding: 3px 0px;
+	display: inline-block;
+}
+.red{
+	color:red;
+}
+.bold{
+	font-weight: bold;
+}
+/*
+*页面checkbox通用样式结束
+*/
+/*******左侧单位树上方查询按扭样式*********************/
+#left .x-panel-body {
+	position: static;
+}
+.x-panel-body-noheader{
+	overflow:hidden !important;
+}
+.bottom{
+	width: 100%;
+ 	position: absolute;
+    bottom: 0px;
+    background-color: #f3f3f3;
+}

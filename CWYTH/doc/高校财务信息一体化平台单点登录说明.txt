@@ -1,0 +1,6 @@
+单点登录方法是在login/ssologin_toIndex里面
+配置单点登录时：1、如果直接进入系统，不要打开某一菜单，地址配置举例：
+					http://192.168.10.60:8083/CWPT/login/ssologin_toIndex
+			2、如果进入系统后默认打开某一菜单，加上改菜单的模块编号即可，地址配置举例：
+					http://192.168.10.60:8083/CWPT/login/ssologin_toIndex?mkbh=010101
+
